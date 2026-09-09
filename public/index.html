@@ -1,43 +1,602 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="theme-color" content="#061c48" />
+
+    <!-- =====================================================
+         TITLE
+    ====================================================== -->
+
+    <title>
+      Safety Nets in Bangalore | Invisible Grills | AST Safety Nets
+    </title>
+
+    <!-- =====================================================
+         PRIMARY SEO
+    ====================================================== -->
+
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="AST Safety Nets & Invisible Grills provides balcony safety nets, pigeon safety nets, anti bird nets, children safety nets, invisible grills, construction safety nets and cricket practice nets in Bangalore. Call +91 9844000299."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <meta
+      name="keywords"
+      content="safety nets in Bangalore, safety nets Bangalore, balcony safety nets Bangalore, invisible grills Bangalore, balcony invisible grills Bangalore, window invisible grills Bangalore, pigeon safety nets Bangalore, pigeon nets Bangalore, anti bird nets Bangalore, children safety nets Bangalore, bird protection nets Bangalore, duct area safety nets Bangalore, building safety nets Bangalore, construction safety nets Bangalore, industrial safety nets Bangalore, staircase safety nets Bangalore, swimming pool safety nets Bangalore, cricket practice nets Bangalore, bird spikes Bangalore, cloth hangers Bangalore, AST Safety Nets Bangalore"
+    />
+
+    <meta
+      name="author"
+      content="AST Safety Nets & Invisible Grills"
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <meta
+      name="bingbot"
+      content="index, follow, max-image-preview:large, max-snippet:-1"
+    />
+
+    <!-- =====================================================
+         CANONICAL
+    ====================================================== -->
+
+    <link
+      rel="canonical"
+      href="https://astsafetynetsinvisiblegrills.com/"
+    />
+
+    <!-- =====================================================
+         LOGO / FAVICON
+         FILE LOCATION: public/logo.png
+    ====================================================== -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/logo.png"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="%PUBLIC_URL%/logo.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/logo.png"
+    />
+
+    <!-- =====================================================
+         MANIFEST
+    ====================================================== -->
+
+    <link
+      rel="manifest"
+      href="%PUBLIC_URL%/manifest.json"
+    />
+
+    <!-- =====================================================
+         GEO / LOCAL SEO
+    ====================================================== -->
+
+    <meta name="geo.region" content="IN-KA" />
+
+    <meta
+      name="geo.placename"
+      content="Bengaluru, Karnataka, India"
+    />
+
+    <!--
+      Add these only when you know the exact business coordinates:
+
+      <meta
+        name="geo.position"
+        content="LATITUDE;LONGITUDE"
+      />
+
+      <meta
+        name="ICBM"
+        content="LATITUDE, LONGITUDE"
+      />
     -->
-    <title>React App</title>
+
+    <!-- =====================================================
+         OPEN GRAPH / FACEBOOK / WHATSAPP
+    ====================================================== -->
+
+    <meta
+      property="og:title"
+      content="Safety Nets in Bangalore | AST Safety Nets & Invisible Grills"
+    />
+
+    <meta
+      property="og:description"
+      content="Professional balcony safety nets, pigeon safety nets, anti bird nets, children safety nets and invisible grill installation services in Bangalore."
+    />
+
+    <meta
+      property="og:url"
+      content="https://astsafetynetsinvisiblegrills.com/"
+    />
+
+    <meta
+      property="og:site_name"
+      content="AST Safety Nets & Invisible Grills"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_IN"
+    />
+
+    <meta
+      property="og:image"
+      content="https://astsafetynetsinvisiblegrills.com/logo.png"
+    />
+
+    <meta
+      property="og:image:secure_url"
+      content="https://astsafetynetsinvisiblegrills.com/logo.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="AST Safety Nets & Invisible Grills Bangalore Logo"
+    />
+
+    <!-- =====================================================
+         TWITTER / SOCIAL SHARING
+    ====================================================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Safety Nets in Bangalore | AST Safety Nets"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Professional safety nets and invisible grill installation services in Bangalore for balconies, windows, children, pigeons, buildings and commercial spaces."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://astsafetynetsinvisiblegrills.com/logo.png"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="AST Safety Nets & Invisible Grills Bangalore"
+    />
+
+    <!-- =====================================================
+         LOCAL BUSINESS SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://astsafetynetsinvisiblegrills.com/#business",
+
+        "name": "AST Safety Nets & Invisible Grills",
+
+        "url": "https://astsafetynetsinvisiblegrills.com/",
+
+        "logo": "https://astsafetynetsinvisiblegrills.com/logo.png",
+
+        "image": "https://astsafetynetsinvisiblegrills.com/logo.png",
+
+        "telephone": "+91-9844000299",
+
+        "email": "astsafetynets@gmail.com",
+
+        "description": "AST Safety Nets & Invisible Grills provides professional balcony safety nets, pigeon safety nets, anti bird nets, children safety nets, bird protection nets, invisible grills, construction safety nets and other safety solutions in Bangalore.",
+
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bengaluru"
+          },
+          {
+            "@type": "State",
+            "name": "Karnataka"
+          }
+        ],
+
+        "contactPoint": {
+          "@type": "ContactPoint",
+
+          "telephone": "+91-9844000299",
+
+          "contactType": "customer service",
+
+          "areaServed": "IN",
+
+          "availableLanguage": [
+            "English",
+            "Kannada",
+            "Hindi"
+          ]
+        }
+      }
+    </script>
+
+    <!-- =====================================================
+         WEBSITE SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+
+        "@type": "WebSite",
+
+        "@id": "https://astsafetynetsinvisiblegrills.com/#website",
+
+        "url": "https://astsafetynetsinvisiblegrills.com/",
+
+        "name": "AST Safety Nets & Invisible Grills",
+
+        "description": "Safety nets and invisible grill installation services in Bangalore.",
+
+        "inLanguage": "en-IN",
+
+        "publisher": {
+          "@id": "https://astsafetynetsinvisiblegrills.com/#business"
+        }
+      }
+    </script>
+
+    <!-- =====================================================
+         ORGANIZATION SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+
+        "@type": "Organization",
+
+        "@id": "https://astsafetynetsinvisiblegrills.com/#organization",
+
+        "name": "AST Safety Nets & Invisible Grills",
+
+        "url": "https://astsafetynetsinvisiblegrills.com/",
+
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://astsafetynetsinvisiblegrills.com/logo.png"
+        },
+
+        "email": "astsafetynets@gmail.com",
+
+        "telephone": "+91-9844000299",
+
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
+
+    <!-- =====================================================
+         SERVICES SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+
+        "@type": "ItemList",
+
+        "name": "AST Safety Nets & Invisible Grills Services",
+
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Service",
+              "name": "Balcony Safety Nets",
+              "description": "Balcony safety net installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Service",
+              "name": "Balcony Invisible Grills",
+              "description": "Balcony invisible grill installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Service",
+              "name": "Pigeon Safety Nets",
+              "description": "Pigeon safety net installation for balconies and open spaces in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Service",
+              "name": "Anti Bird Nets",
+              "description": "Anti bird net installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Service",
+              "name": "Window Invisible Grills",
+              "description": "Window invisible grill installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Service",
+              "name": "Children Safety Nets",
+              "description": "Children safety net installation for balconies, windows and staircases in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Service",
+              "name": "Duct Area Safety Nets",
+              "description": "Duct area safety net installation for residential and commercial buildings in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Service",
+              "name": "Kids Safety Invisible Grills",
+              "description": "Kids safety invisible grill installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "Service",
+              "name": "Bird Protection Nets",
+              "description": "Bird protection net installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "Service",
+              "name": "Building Safety Nets",
+              "description": "Building safety net installation services in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "Service",
+              "name": "Stainless Steel Invisible Grills",
+              "description": "Stainless steel invisible grill installation for balconies, windows and staircases in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@type": "Service",
+              "name": "Construction Safety Nets",
+              "description": "Construction safety net solutions for building and construction sites in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@type": "Service",
+              "name": "Industrial Safety Nets",
+              "description": "Industrial safety net solutions for factories, warehouses and industrial spaces in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@type": "Service",
+              "name": "Staircase Safety Nets",
+              "description": "Staircase safety net installation for homes, apartments and commercial properties in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@type": "Service",
+              "name": "Swimming Pool Safety Nets",
+              "description": "Swimming pool safety net installation for residential and commercial pools in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "item": {
+              "@type": "Service",
+              "name": "Bird Spikes",
+              "description": "Bird spike installation for balconies, rooftops, ledges and commercial buildings in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "item": {
+              "@type": "Service",
+              "name": "Cricket Practice Nets",
+              "description": "Cricket practice net installation for schools, academies, clubs and residential spaces in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "item": {
+              "@type": "Service",
+              "name": "Cloth Hangers",
+              "description": "Space-saving cloth hanger installation solutions for homes and apartments in Bangalore.",
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              }
+            }
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      AST Safety Nets & Invisible Grills provides balcony safety nets,
+      pigeon safety nets, anti bird nets, children safety nets,
+      invisible grills, construction safety nets, cricket practice nets
+      and other professional safety solutions in Bangalore.
+
+      Please enable JavaScript to view the complete website.
+    </noscript>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

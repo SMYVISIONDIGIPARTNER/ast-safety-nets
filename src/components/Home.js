@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-const PHONE = "9844771499";
-const WHATSAPP = "919844771499";
+const PHONE = "9844000299";
+const WHATSAPP = "919844000299";
 
 const SITE_URL = "https://astsafetynetsinvisiblegrills.com";
 

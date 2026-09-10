@@ -7,7 +7,7 @@ function Navbar() {
 
   const location = useLocation();
 
-  const PHONE = "9844771499";
+  const PHONE = "9844000299";
 
   useEffect(() => {
     const handleScroll = () => {
